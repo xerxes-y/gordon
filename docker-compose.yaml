@@ -1,0 +1,29 @@
+version: '3.8' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    volumes:
+      - ./docker-entrypoint-initdb.d/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    ports:
+      - "27017:27017"
+  gordon:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gordon-app
+    container_name: gordon-app
+    ports:
+      - 8080:8080
+    environment:
+      SPRING_DATASOURCE_URL: mongodb://mongodb:27017/kitchen
+    links:
+      - mongodb
+volumes:
+  mongodb:
+    driver: local
+networks:
+  common-network:
+    driver: bridge

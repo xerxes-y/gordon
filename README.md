@@ -14,7 +14,7 @@ The following technologies are used in this project
 * [Spring Reactive Web](https://docs.spring.io/spring-boot/docs/3.0.5/reference/htmlsingle/#web.reactive)
 * [OpenApi Swagger ](https://swagger.io/specification/)
 * [json web token](https://github.com/jwtk/jjwt)
-* [Spring Boot Security](hhttps://docs.spring.io/spring-security/reference/reactive/getting-started.html)
+* [Spring Boot Security](https://docs.spring.io/spring-security/reference/reactive/getting-started.html)
 * [Spring Boot Test](https://spring.io/guides/gs/testing-web/)
 
 ## Architecture Design

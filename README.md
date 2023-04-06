@@ -68,5 +68,5 @@ user : admin
 pass : password 
 
 user : user
-pass: password
+pass : password
 ```

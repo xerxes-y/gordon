@@ -62,3 +62,11 @@ For swagger url you can use
 ```
 http://localhost:8080/webjars/swagger-ui/index.html
 ```
+username and password for login
+```
+user : admin
+pass : password 
+
+user : user
+pass: password
+```
